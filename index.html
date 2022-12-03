@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Five Day Weather Forecast</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css"
+      crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <header class="card text-center">
+      <h1>Weather Dashboard</h1>
+    </header>
+    <div class="grid-x grid-padding-x">
+      <nav class="card cell medium-3">
+        <form class="card-header">
+          <label>
+            City, State, Country
+            <input
+              id="search-input"
+              type="text"
+              placeholder="Sacramento, OR, USA"
+            />
+          </label>
+          <button class="button">Search</button>
+        </form>
+        <section id="saved-cities" class="hide-for-small-only"></section>
+      </nav>
+      <main class="card cell medium-9 grid-y grid-padding-y grid-padding-x">
+        <section id="today" class="cell"></section>
+
+        <h6 class="cell">5-Day Forecast</h6>
+        <section
+          id="forecast"
+          class="cell grid-x grid-padding-x grid-padding-y"
+        ></section>
+      </main>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js"
+      crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
